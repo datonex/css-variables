@@ -1,5 +1,21 @@
-/* misc styles, nothing to do with CSS variables*/
+/* set default values for out variables */
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+/* using these default variables so they don't have to be re-declared */
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
 
+.h1 {
+  color: var(--base);
+}
+
+/* misc styles, nothing to do with CSS variables */
 body {
   text-align: center;
   background: #193549;
